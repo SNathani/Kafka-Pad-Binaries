@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kafka - Getting Started</title>
+    <style>
+        * {
+            font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+        }
+
+        body {
+            margin: 0;
+            padding: 0px 25px;
+            color: lightgrey;
+            background-color: #2b2b2b;
+            overflow: auto;
+            overflow-wrap: break-word;
+            text-wrap: normal;
+            scroll-behavior: smooth;
+            scrollbar-track-color: #2b2b2b;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #2a2a2a;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-button {
+            background: transparent;
+        }
+
+            ::-webkit-scrollbar-button:hover {
+                background: #4e4e4e;
+            }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2e2e2e;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #4e4e4e;
+            }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        ul, ol {
+            padding-inline-start: 18px;
+        }
+
+        a.link, a.link:visited {
+            color: skyblue;
+            cursor: pointer;
+        }
+
+        .note {
+            font-style: italic;
+        }
+
+        .narrow {
+            margin: 2px;
+            line-height: 1em;
+        }
+    </style>
+    <script>
+        function onMouseDown(e) {
+            return false;
+        }
+    </script>
+</head>
+<body oncontextmenu="return false;" onmousedown="javascript:onMouseDown();">
+    <h2>Getting Started</h2>
+
+
+    <ul>
+        <li>
+            <h3>Install Kafka</h3>
+            Follow the instructions in this article to intall Kafka and ZooKeeper from
+            <a class="link" href="https://dev.to/thegroo/one-to-run-them-all-1mg6" target="_blank">One-to-run-them-all</a>
+            docker compose file.
+        </li>
+        <li>
+            <h3>Connecting to Kafka</h3>
+
+            <ol>
+                <li>Click on the 'Add New' button to create a new connection row</li>
+                <li>
+                    Enter a connection name in the Name column and the Kafka broker name and port
+                    information in the Brokers column. Multiple brokers can be added by separating them with
+                    a comma. Press TAB to commit changes.
+                </li>
+                <li>Click on the 'Connect' button to connect to the brokers selected</li>
+            </ol>
+        </li>
+        <li>
+            <h3>Add/Remove Topics (Tab: TOPICS)</h3>
+            <ol>
+                <li>To add a topic, enter the topic name in the search box.</li>
+                <li>
+                    If the topic name is not found, the Plus button will be enabled.
+                    Click on the Plus button to add the topic with the name in the search box.
+                </li>
+                <li>
+                    To remove a topic, select one or more topic checkboxes and hit the 'Trash Can' button.
+                </li>
+            </ol>
+            <p class="note">Note: Topic names are case-sensitive</p>
+        </li>
+        <li>
+            <h3>Consuming Messages from Topics (Tab: CONSUMERS)</h3>
+            <ol>
+                <li>
+                    Add a consumer by clicking the Plus button.
+                    <ul>
+                        <li>Select the topics to consume and click the 'Subscribe to Topics' button</li>
+                        <li>Enter the Client Id and Group Id information</li>
+                        <li>Click on the OK button to add a consumer</li>
+                    </ul>
+                </li>
+
+            </ol>
+            <p></p>
+        </li>
+        <li>
+            <h3>Sending Message to Topics (Tab: PRODUCERS)</h3>
+            <ol>
+                <li>Add a producer by clicking on the Plus button.</li>
+                <li>
+                    <ul>
+                        <li>
+                            Select one or more topics from the list and click on the 'Add Selected Topics'
+                            button to add the selected topics to the subcription list
+                        </li>
+                        <li>Enter Client Id</li>
+                        <li>Click on the OK button to finish adding the producer</li>
+                    </ul>
+                </li>
+                <li>
+                    To send messages to a topic
+                    <ul>
+                        <li>Select the producer that is associated with the topic</li>
+                        <li>Enter the message in the text box and click the 'Send' button from the above toolbar</li>
+                    </ul>
+                </li>
+            </ol>
+            <p></p>
+        </li>
+    </ul>
+    <p>
+        <h5 class="narrow">
+            Request more features
+        </h5>
+        <small style="font-size:smaller;">
+            To send us your feedback and to request more features, click on the Feedback button and submit your feedback and feature requests.
+        </small>
+    </p>
+</body>
+</html>
