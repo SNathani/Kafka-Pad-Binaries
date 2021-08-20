@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "local",
+    "Brokers": "kafka:9092"
+  }
+]  {
+    "Name": null,
+    "Brokers": null
+  }
+]
